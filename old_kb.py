@@ -37,9 +37,14 @@ def create_inline_keyboard(key):
         kb.add(InlineKeyboardButton('Бонус 1', callback_data=f'[P1]-{key}'))
         kb.add(InlineKeyboardButton('Главный экран', callback_data='Main_Screen'))
     elif key == '[A1.1]':
-        kb.add(InlineKeyboardButton(f"4/64 Gb ({x['[A1.1]']['Button1']})", callback_data=f"x-{x['[A1.1]']['Button1']}-{key}"))
-        kb.add(InlineKeyboardButton(f"6/120 Gb ({x['[A1.1]']['Button2']})", callback_data=f"x-{x['[A1.1]']['Button2']}-{key}"))
-        kb.add(InlineKeyboardButton(f"8/256 Gb ({x['[A1.1]']['Button3']})", callback_data=f"x-{x['[A1.1]']['Button3']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 1 ({x[key]['Button1']})", callback_data=f"x-{x[key]['Button1']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 2 ({x[key]['Button2']})", callback_data=f"x-{x[key]['Button2']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 3 ({x[key]['Button3']})", callback_data=f"x-{x[key]['Button3']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 4 ({x[key]['Button4']})", callback_data=f"x-{x[key]['Button4']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 5 ({x[key]['Button5']})", callback_data=f"x-{x[key]['Button5']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 6 ({x[key]['Button6']})", callback_data=f"x-{x[key]['Button6']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 7 ({x[key]['Button7']})", callback_data=f"x-{x[key]['Button7']}-{key}"))
+        kb.add(InlineKeyboardButton(f"Кнопка 8 ({x[key]['Button8']})", callback_data=f"x-{x[key]['Button8']}-{key}"))
         kb.add(InlineKeyboardButton('Назад', callback_data='[A1]'))
         kb.add(InlineKeyboardButton('Главный экран', callback_data='Main_Screen'))
 
@@ -117,8 +122,7 @@ def create_inline_keyboard(key):
         kb.add(InlineKeyboardButton('Назад', callback_data='[B1.2]'))
         kb.add(InlineKeyboardButton('Главный экран', callback_data='Main_Screen'))
     elif key == '[B1.2.4]':
-        kb.add(InlineKeyboardButton(f"4/64 Gb ({x['[B1.2.4]']['Button1']})", callback_data=f"x-{x['[B1.2.4]']['Button1']}-{key}"))
-        kb.add(InlineKeyboardButton(f"6/120 Gb ({x['[B1.2.4]']['Button2']})", callback_data=f"x-{x['[B1.2.4]']['Button2']}-{key}"))
+        kb.add(InlineKeyboardButton('Бонус 2', callback_data=f'[P2]-{key}'))
         kb.add(InlineKeyboardButton('Назад', callback_data='[B1.2]'))
         kb.add(InlineKeyboardButton('Главный экран', callback_data='Main_Screen'))
     elif key == '[B1.2.5]':
@@ -354,6 +358,8 @@ def create_inline_keyboard(key):
         kb.add(InlineKeyboardButton(f"256 Gb ({x[key]['Button1']})", callback_data=f"x-{x[key]['Button1']}-{key}"))
         kb.add(InlineKeyboardButton(f"512 Gb ({x[key]['Button2']})", callback_data=f"x-{x[key]['Button2']}-{key}"))
         kb.add(InlineKeyboardButton(f"1 Tb ({x[key]['Button3']})", callback_data=f"x-{x[key]['Button3']}-{key}"))
+        kb.add(InlineKeyboardButton(f"2 Tb ({x[key]['Button4']})", callback_data=f"x-{x[key]['Button4']}-{key}"))
+        kb.add(InlineKeyboardButton(f"3 Tb ({x[key]['Button5']})", callback_data=f"x-{x[key]['Button5']}-{key}"))
         kb.add(InlineKeyboardButton('Назад', callback_data='[D1.1]'))
         kb.add(InlineKeyboardButton('Главный экран', callback_data='Main_Screen'))
     elif key == '[D1.2]':
